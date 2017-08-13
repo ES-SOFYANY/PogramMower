@@ -4,7 +4,7 @@
   "description": "il s'agit d'un projet perso",
   "main": "index.js",
   "scripts": {
-    "unit": "./node_modules/.bin/mocha --require babel-polyfill --compilers js:babel-register test/",
+    "test": "./node_modules/.bin/mocha --require babel-polyfill --compilers js:babel-register test/",
     "start": "./node_modules/.bin/babel-node index.js",
     "eslint": "./node_modules/.bin/eslint  test/index.spec.js",
     "watch": "node node_modules/eslint-watch/bin/esw -w --fix"
