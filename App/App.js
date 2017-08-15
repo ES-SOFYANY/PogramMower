@@ -35,8 +35,7 @@ export default class App {
     });
   }
 
-  saveFile(path, data) {
-    const output = this.startProgrammeAndReturnOutput(data);
+  saveFile(output, path) {
     fs.writeFile(path, output, (err) => {
       if (err) {
         throw Error('Error: file not saved');
